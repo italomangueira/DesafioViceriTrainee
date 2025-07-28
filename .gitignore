@@ -136,3 +136,5 @@ dist
 .pnp.*
 BackHero/BackHero_CRUD/.vs/BackHero_CRUD/FileContentIndex/56ffef26-9571-4fcf-9027-6d6ff8c8ef9e.vsidx
 *.vsidx
+.vs
+.vscode
