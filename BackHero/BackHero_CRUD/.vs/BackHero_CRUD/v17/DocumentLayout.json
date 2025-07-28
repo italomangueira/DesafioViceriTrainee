@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DesafioViceriTrainee\\BackHero\\BackHero_CRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4ACAC6DB-80F2-4CD3-B7F3-5740DE1BF121}|Infrastructure\\BackHero_CRUD.Infrastructure\\BackHero_CRUD.Infrastructure.csproj|d:\\desafioviceritrainee\\backhero\\backhero_crud\\infrastructure\\backhero_crud.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ACAC6DB-80F2-4CD3-B7F3-5740DE1BF121}|Infrastructure\\BackHero_CRUD.Infrastructure\\BackHero_CRUD.Infrastructure.csproj|solutionrelative:infrastructure\\backhero_crud.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80E17022-4808-400A-85AB-CDD47A22A60D}|Domain\\BackHero_CRUD.Domain\\BackHero_CRUD.Domain.csproj|d:\\desafioviceritrainee\\backhero\\backhero_crud\\domain\\backhero_crud.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80E17022-4808-400A-85AB-CDD47A22A60D}|Domain\\BackHero_CRUD.Domain\\BackHero_CRUD.Domain.csproj|solutionrelative:domain\\backhero_crud.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F629FD35-489D-457A-BA15-BB2676C7D842}|Application\\BackHero_CRUD.Application\\BackHero_CRUD.Application.csproj|d:\\desafioviceritrainee\\backhero\\backhero_crud\\application\\backhero_crud.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F629FD35-489D-457A-BA15-BB2676C7D842}|Application\\BackHero_CRUD.Application\\BackHero_CRUD.Application.csproj|solutionrelative:application\\backhero_crud.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 134,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\DesafioViceriTrainee\\BackHero\\BackHero_CRUD\\Infrastructure\\BackHero_CRUD.Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\BackHero_CRUD.Infrastructure\\Class1.cs",
+              "ToolTip": "D:\\DesafioViceriTrainee\\BackHero\\BackHero_CRUD\\Infrastructure\\BackHero_CRUD.Infrastructure\\Class1.cs",
+              "RelativeToolTip": "Infrastructure\\BackHero_CRUD.Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T13:59:33.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\DesafioViceriTrainee\\BackHero\\BackHero_CRUD\\Domain\\BackHero_CRUD.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "Domain\\BackHero_CRUD.Domain\\Class1.cs",
+              "ToolTip": "D:\\DesafioViceriTrainee\\BackHero\\BackHero_CRUD\\Domain\\BackHero_CRUD.Domain\\Class1.cs",
+              "RelativeToolTip": "Domain\\BackHero_CRUD.Domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T13:59:11.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\DesafioViceriTrainee\\BackHero\\BackHero_CRUD\\Application\\BackHero_CRUD.Application\\Class1.cs",
+              "RelativeDocumentMoniker": "Application\\BackHero_CRUD.Application\\Class1.cs",
+              "ToolTip": "D:\\DesafioViceriTrainee\\BackHero\\BackHero_CRUD\\Application\\BackHero_CRUD.Application\\Class1.cs",
+              "RelativeToolTip": "Application\\BackHero_CRUD.Application\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T13:58:40.724Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 266,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
