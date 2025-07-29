@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackHero_CRUD.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+460f217d608945b8ef04d210245e84d9dc3bdd49")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81977f2f7e767ce18af24e90e837aa79e81998f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackHero_CRUD.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackHero_CRUD.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
