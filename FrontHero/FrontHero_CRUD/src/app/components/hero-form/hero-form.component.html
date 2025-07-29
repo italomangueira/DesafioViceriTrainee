@@ -1,0 +1,161 @@
+<div
+  class="flex flex-wrap justify-center gap-8 p-6 min-h-screen bg-gray-100 items-start"
+>
+  <div
+    class="bg-white rounded-lg shadow-xl p-8 w-full max-w-md border-l-4 border-blue-500 hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+  >
+    <h2 class="text-3xl font-extrabold text-blue-600 text-center mb-8">
+      {{ currentHeroId ? "Atualizar Herói" : "Cadastrar Novo Herói" }}
+    </h2>
+    <form [formGroup]="heroForm" (ngSubmit)="onSubmit()">
+      <div class="mb-6">
+        <label for="nome" class="block text-gray-700 text-lg font-semibold mb-2"
+          >Nome:</label
+        >
+        <input
+          type="text"
+          id="nome"
+          formControlName="nome"
+          class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-800 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200"
+          placeholder="Digite o nome real"
+        />
+        <div
+          *ngIf="heroForm.get('nome')?.invalid && heroForm.get('nome')?.touched"
+          class="text-red-500 text-sm mt-1"
+        >
+          Nome é obrigatório.
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label
+          for="nomeHeroi"
+          class="block text-gray-700 text-lg font-semibold mb-2"
+          >Nome de Herói:</label
+        >
+        <input
+          type="text"
+          id="nomeHeroi"
+          formControlName="nomeHeroi"
+          class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-800 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200"
+          placeholder="Digite o nome de herói"
+        />
+        <div
+          *ngIf="
+            heroForm.get('nomeHeroi')?.invalid &&
+            heroForm.get('nomeHeroi')?.touched
+          "
+          class="text-red-500 text-sm mt-1"
+        >
+          Nome de Herói é obrigatório.
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label
+          for="dataNascimento"
+          class="block text-gray-700 text-lg font-semibold mb-2"
+          >Data de Nascimento:</label
+        >
+        <input
+          type="date"
+          id="dataNascimento"
+          formControlName="dataNascimento"
+          class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-800 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200"
+        />
+        <div
+          *ngIf="
+            heroForm.get('dataNascimento')?.invalid &&
+            heroForm.get('dataNascimento')?.touched
+          "
+          class="text-red-500 text-sm mt-1"
+        >
+          Data de Nascimento é obrigatória.
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label
+          for="altura"
+          class="block text-gray-700 text-lg font-semibold mb-2"
+          >Altura (metros):</label
+        >
+        <input
+          type="number"
+          id="altura"
+          formControlName="altura"
+          step="0.01"
+          class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-800 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200"
+          placeholder="Ex: 1.80"
+        />
+        <div
+          *ngIf="
+            heroForm.get('altura')?.invalid && heroForm.get('altura')?.touched
+          "
+          class="text-red-500 text-sm mt-1"
+        >
+          Altura é obrigatória e deve ser um valor positivo.
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label for="peso" class="block text-gray-700 text-lg font-semibold mb-2"
+          >Peso (kg):</label
+        >
+        <input
+          type="number"
+          id="peso"
+          formControlName="peso"
+          step="0.01"
+          class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-800 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200"
+          placeholder="Ex: 85.5"
+        />
+        <div
+          *ngIf="heroForm.get('peso')?.invalid && heroForm.get('peso')?.touched"
+          class="text-red-500 text-sm mt-1"
+        >
+          Peso é obrigatório e deve ser um valor positivo.
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <label
+          for="superpoderes"
+          class="block text-gray-700 text-lg font-semibold mb-2"
+          >Superpoderes:</label
+        >
+        <select
+          id="superpoderes"
+          formControlName="superpoderes"
+          multiple
+          class="shadow-sm border rounded-lg w-full py-3 px-4 text-gray-800 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200 h-32 overflow-y-auto"
+          [compareWith]="compareFn"
+        >
+          <option
+            *ngFor="let superpoderItem of superpoderes"
+            [value]="superpoderItem.id"
+          >
+            {{ superpoderItem.superPoder }}
+          </option>
+        </select>
+      </div>
+
+      <button
+        type="submit"
+        [disabled]="!heroForm.valid"
+        class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed transform hover:-translate-y-1"
+      >
+        {{ currentHeroId ? "Atualizar Herói" : "Cadastrar Herói" }}
+      </button>
+
+      <button
+        *ngIf="currentHeroId"
+        type="button"
+        (click)="deleteHero()"
+        class="w-full mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+      >
+        Excluir Herói
+      </button>
+    </form>
+  </div>
+</div>

@@ -49,11 +49,5 @@ namespace BackHero_CRUD.Infrastructure.Repositories
                 .ThenInclude(hs => hs.Superpoderes)
                 .ToListAsync();
         }
-
-        //public async Task<bool> ExisteNomeHeroiAsync(string nomeHeroi, int? ignorarId = null)
-        //{
-        //    return await _context.Herois
-        //        .AnyAsync(h => h.NomeHeroi == nomeHeroi && (!ignorarId.HasValue || h.Id != ignorarId));
-        //}
     }
 }

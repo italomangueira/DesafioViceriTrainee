@@ -10,7 +10,7 @@ namespace BackHero_CRUD.Application.DTOs
         [Required, MaxLength(120)]
         public string NomeHeroi { get; set; } = string.Empty;
 
-        public DateTime DataNascimento { get; set; }
+        public DateTime? DataNascimento { get; set; }
 
         [Required]
         public float Altura { get; set; }

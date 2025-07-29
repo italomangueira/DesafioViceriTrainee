@@ -54,7 +54,7 @@ namespace BackHero_CRUD.API.Controllers
             var sucesso = await _service.RemoverAsync(id);
             if (!sucesso)
                 return NotFound($"Herói com ID {id} não encontrado.");
-            return Ok("Herói excluído com sucesso.");
+            return NoContent();
         }
     }
 }

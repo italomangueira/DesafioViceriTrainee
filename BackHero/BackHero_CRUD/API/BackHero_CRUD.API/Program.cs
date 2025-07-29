@@ -33,13 +33,13 @@ builder.Services.AddDbContext<HeroDbContext>(options =>
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: "AllowSpecificOrigin",
-                      policy =>
-                      {
-                          policy.WithOrigins("http://localhost:4200") //coloque sua url localhost, caso for na porta 4200
-                                .AllowAnyHeader()
-                                .AllowAnyMethod();
-                      });
+    options.AddPolicy("AllowSpecificOrigin",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200")
+                  .AllowAnyHeader()    
+                  .AllowAnyMethod();   
+        });
 });
 
 var app = builder.Build();
@@ -66,6 +66,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowSpecificOrigin");
 
 app.UseAuthorization();
 

@@ -31,8 +31,8 @@ namespace BackHero_CRUD.Application.Services
                 Nome = request.Nome,
                 NomeHeroi = request.NomeHeroi,
                 DataNascimento = request.DataNascimento,
-                Altura = request.Altura,
-                Peso = request.Peso,
+                Altura = float.Parse(request.Altura.ToString("F")),
+                Peso = float.Parse(request.Peso.ToString("F")),
                 HeroisSuperpoderes = new List<HeroisSuperpoderes>()
             };
 
@@ -59,21 +59,15 @@ namespace BackHero_CRUD.Application.Services
 
         public async Task<HeroiDto> AtualizarAsync(int id, CriarHeroiRequest request)
         {
-            var heroi = await _repo.ObterPorIdAsync(id);
+            var heroi = await _repo.ObterPorIdAsync(id); 
             if (heroi == null)
                 throw new Exception("Herói não encontrado.");
 
-            if (heroi.NomeHeroi == request.NomeHeroi)
-                throw new ApplicationException($"Já existe um Heroi com esse Nome Heroi: {request.NomeHeroi}");
-
-            var herois = new HeroiDto
-            {
-                Nome = request.Nome,
-                NomeHeroi = request.NomeHeroi,
-                DataNascimento = request.DataNascimento,
-                Altura = request.Altura,
-                Peso = request.Peso,
-            };
+            heroi.Nome = request.Nome;
+            heroi.NomeHeroi = request.NomeHeroi;
+            heroi.DataNascimento = request.DataNascimento;
+            heroi.Altura = float.Parse(request.Altura.ToString("F"));
+            heroi.Peso = float.Parse(request.Peso.ToString("F"));
 
             var superpoderes = await _superpoderRepo.ObterPorIdsAsync(request.SuperpoderesIds);
             heroi.HeroisSuperpoderes.Clear();

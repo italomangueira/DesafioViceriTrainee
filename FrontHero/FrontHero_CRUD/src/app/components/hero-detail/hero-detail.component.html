@@ -1,0 +1,102 @@
+<div class="container mx-auto p-6">
+  <div *ngIf="isLoading" class="text-center text-xl text-gray-600 mt-10">
+    Carregando detalhes do herói...
+  </div>
+
+  <div
+    *ngIf="errorMessage"
+    class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+    role="alert"
+  >
+    <strong class="font-bold">Erro!</strong>
+    <span class="block sm:inline"> {{ errorMessage }}</span>
+    <button
+      (click)="goBack()"
+      class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mt-3 block mx-auto"
+    >
+      Voltar para a lista
+    </button>
+  </div>
+
+  <div
+    *ngIf="hero && !isLoading && !errorMessage"
+    class="bg-white rounded-lg shadow-2xl p-8 border-t-8 border-blue-600 animate__animated animate__fadeIn"
+  >
+    <div
+      class="flex items-center justify-between mb-6 pb-4 border-b border-gray-200"
+    >
+      <div>
+        <h1 class="text-4xl font-extrabold text-blue-800">
+          {{ hero.nomeHeroi }}
+        </h1>
+        <p class="text-xl text-gray-600 mt-1">({{ hero.nome }})</p>
+      </div>
+      <button
+        (click)="editHero(hero.id)"
+        class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-5 rounded-lg transition-colors duration-300"
+      >
+        Editar Herói
+      </button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 mb-8">
+      <div>
+        <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b pb-2">
+          Detalhes Básicos
+        </h2>
+        <p class="text-lg text-gray-800 mb-2">
+          <span class="font-semibold">Idade:</span>
+          {{ getAge(hero.dataNascimento) }}
+        </p>
+        <p class="text-lg text-gray-800 mb-2">
+          <span class="font-semibold">Data de Nascimento:</span>
+          {{ hero.dataNascimento }}
+        </p>
+        <p class="text-lg text-gray-800 mb-2">
+          <span class="font-semibold">Altura:</span> {{ hero.altura }} m
+        </p>
+        <p class="text-lg text-gray-800 mb-2">
+          <span class="font-semibold">Peso:</span> {{ hero.peso }} kg
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b pb-2">
+          Superpoderes
+        </h2>
+        <div
+          *ngIf="
+            hero.superpoderes && hero.superpoderes.length > 0;
+            else noSuperpowers
+          "
+        >
+          <ul class="list-disc list-inside text-lg text-gray-800 space-y-3">
+            <li
+              *ngFor="let superpoder of hero.superpoderes"
+              class="mb-2 p-3 bg-blue-50 rounded-lg shadow-sm"
+            >
+              <span class="font-bold text-blue-700">{{
+                superpoder.superPoder
+              }}</span
+              >: {{ superpoder.descricao }}
+            </li>
+          </ul>
+        </div>
+        <ng-template #noSuperpowers>
+          <p class="text-lg text-gray-600 italic">
+            Este herói não possui superpoderes cadastrados.
+          </p>
+        </ng-template>
+      </div>
+    </div>
+
+    <div class="mt-8 text-center">
+      <button
+        (click)="goBack()"
+        class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2.5 px-6 rounded-lg transition-colors duration-300"
+      >
+        Voltar para a Lista de Heróis
+      </button>
+    </div>
+  </div>
+</div>
