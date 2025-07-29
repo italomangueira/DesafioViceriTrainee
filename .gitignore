@@ -138,3 +138,55 @@ BackHero/BackHero_CRUD/.vs/BackHero_CRUD/FileContentIndex/56ffef26-9571-4fcf-902
 *.vsidx
 .vs
 .vscode
+/BackHero/BackHero_CRUD/.vs/BackHero_CRUD/DesignTimeBuild/.dtbcache.v2
+/BackHero/BackHero_CRUD/.vs/BackHero_CRUD/v17/.suo
+/BackHero/BackHero_CRUD/.vs/BackHero_CRUD/v17/DocumentLayout.backup.json
+/BackHero/BackHero_CRUD/.vs/BackHero_CRUD/v17/DocumentLayout.json
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.pdb
+*.suo
+*.user
+*.vspscc
+
+# NuGet packages
+**/packages/
+*.nupkg
+
+# Sensitive configuration files (adjust as needed)
+appsettings.Development.json
+# appsettings.json (uncomment if sensitive data is present and not managed otherwise)
+
+# Other temporary or generated files
+*.log
+*.db
+.vscode/
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/obj/BackHero_CRUD.API.csproj.nuget.dgspec.json
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/obj/BackHero_CRUD.API.csproj.nuget.g.props
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/obj/BackHero_CRUD.API.csproj.nuget.g.targets
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/obj/Debug/net8.0/BackHero_CRUD.API.AssemblyInfo.cs
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/obj/Debug/net8.0/BackHero_CRUD.API.AssemblyInfoInputs.cache
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/obj/Debug/net8.0/BackHero_CRUD.API.assets.cache
+/BackHero/BackHero_CRUD/API/BackHero_CRUD.API/obj/Debug/net8.0/BackHero_CRUD.API.csproj.AssemblyReference.cache
